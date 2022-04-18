@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @{
+    ViewData["Random Passcode Generator"] = "Home Page";
+}
+<h1 name="count">Random Passcode(@ViewBag.CountNumber)</h1>
+    <div>
+        <fieldset>
+            <form action="" method="get">
+                <p>@ViewBag.passcode</p>
+                <button type="submit">Generate</button>
+            </form>
+        </fieldset>
+    </div>
+</div>
